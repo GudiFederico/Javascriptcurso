@@ -1,14 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Gudiño Federico</h1>
-    <h2>Sistema de gestion de turnos a clases de un gimnasio</h2>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>WolfBox</title>
+    </head>
+
+
+  <body>
+
+    <!-- header con barra de navegacion de bootstrap-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-wolf-01.png" alt="logo_wolf">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon navbar-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#s-promos">Promos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#s-clases">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#s-sedes">Sedes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#s-nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Inscripciones</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+    </header>
+
+    
+    <!--seccion carrusel-->
+
+
+    <section class="carrusel_img container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active carru">
+                <div class="carru_text row">
+                  <h2 class="col-6">
+                      FORMA PARTE DE NUESTRA FAMILIA!
+                  </h2>
+                </div>
+                <img src="https://cdn.shopify.com/s/files/1/0406/9729/9097/files/GEAR_UP_FOR_1_1500x.jpg?v=1646139231" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/5bc89b5a4d546e39687f168d/1598020115437-J9UD8XR1BFE1WKJ9H2QX/Back-To-The-Gym-Banner.jpg?format=1500w" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="http://www.sinapgym.com.ar/images/slider2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.palbincdn.com/users/38400/upload/images/zona-peso-libre.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.colorado.edu/today/sites/default/files/styles/advanced_article_hero/public/reccenter.jpg?itok=njzTr7dU" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    
+    
+    
+    <!--footer-->
+
+<footer class="container">
+    <hr>
+    <div class="row">
+      <div class="col-6 foot-text">
+      <p>
+          <i>Todos derechos reservados. WolfBox 2023.</i> 
+      </p>
+      </div>
+      
+    </div>
+  
+  </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
