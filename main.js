@@ -1,3 +1,5 @@
+//ARRAYS DE OBJETOS PARA LOS USUARIOS
+
 const users = [
 
     {
@@ -16,6 +18,7 @@ const users = [
 
 ]
 
+//ARRAYS DE OBJETOS PARA LAS CLASES
 
 const clases = [
     {
@@ -34,6 +37,7 @@ const clases = [
     }
 ]
 
+//ARRAYS VACIOS PARA LOS CUPOS DE LAS CLASES - SE DEBEN LKLENAR A MEDIDA QUE LOS USUARIOS SE INSCRIBEN
 
 let cupoCross = [];
 let cupoKick = [];
@@ -41,6 +45,9 @@ let cupoYoga = [];
 
 let usuarioIngresado = prompt("ingrese su usuario");
 const usuarioEncontrado = users.find(usuario => usuario.nombre === usuarioIngresado);
+
+//FUNCION LOGIN PARA INICIAR SESION
+//BUSCA CON FIND SI EL USUARIO INGRESADO EXISTE Y LO VALIDA CON LA PASS
 
 function login() {
     if(usuarioEncontrado != undefined && usuarioEncontrado.nombre === usuarioIngresado){
@@ -57,6 +64,9 @@ function login() {
     }
 
 }
+
+//FUNCION PARA SOLICITAR TURNO SEGUN LA CLASE SELECCIONADA
+//BUSCA LA CLASE EN EL ARRAY DE CLASES Y VERIFICA SI HAY CUPO O SI EL USUARIO YA TIENE ASIGNADO UN TURNO
 
 
 function addTurno(){
@@ -100,6 +110,8 @@ function addTurno(){
     }
 }
 
+//FUNCION PARA CANCELAR TURNO
+//VERIFICA SI EL USUARIO YA TIENE UN TURNO ASIGNADO EN EL ARRAY DE CUPO Y LO ELIMINA
 
 function cancelTurno() {
     let claseIngresada = prompt("ingrese la clase que desea asistir (crossfit, kickboxing, yoga)");
@@ -149,6 +161,8 @@ function cancelTurno() {
     }
 }
 
+
+//FUNCION PARAS SECCIONAR LA ACCION A REALIZAR SOLICITAR UN TURNO O CANCELARLO
 
 function select(){
     
